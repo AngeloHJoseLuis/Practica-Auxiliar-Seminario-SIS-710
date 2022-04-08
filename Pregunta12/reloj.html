@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    /*
+    12. Realiza un script que muestre un reloj en pantalla con fecha y hora y que se actualice cada segundo.
+    Función setTimeout().
+    */
+
+    <script language="JavaScript">
+        var reloj = 0;
+        var frecuencia = 1000;
+
+        function actualiza() {
+            var ahora = new Date();
+            var fecha = ahora.getDate() + " - " + (ahora.getMonth() + 1) + " - " + ahora.getFullYear();
+            var hora = ahora.getHours() + ":" + ahora.getMinutes() + ":" + ahora.getSeconds();
+            var escribe = 'Hoy es ' + fecha + ' y son las ' + hora + ' horas';
+            var situa = document.getElementById('capa0');
+            situa.innerHTML = escribe;
+            reloj = setTimeout("actualiza()", frecuencia);
+        }
+    </script>
+</head>
+
+<body onLoad="actualiza()" ;>
+    <div id="capa0"> </div>
+</body>
+
+</html>
