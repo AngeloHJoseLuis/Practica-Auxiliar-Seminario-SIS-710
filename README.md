@@ -1,2 +1,2 @@
-# AngeloHuancaJoseLuis_P1Aux
-# AngeloHuancaJoseLuis_P1Aux
+# Práctica Seminario (SIS-719)
+Práctica de Auxiliatura de Seminario de Sistemas con 20 preguntas.
